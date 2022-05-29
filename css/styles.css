@@ -22,7 +22,6 @@ ol {
   padding-left: 0;
 }
 
-
 body {
   color: var(--main-text-color);
   background-color: var(--white-color);
@@ -64,9 +63,10 @@ body {
   margin: -1px;
 }
 
-.hednav {
+.header-list,
+.info {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .logo1 {
@@ -87,9 +87,9 @@ body {
   color: var(--main-title-color);
 }
 
-.header-item:not(:last-child) { 
-margin-right: 50px;
- outline: 1px solid red;
+.header-item:not(:last-child) {
+  margin-right: 50px;
+  outline: 1px solid red;
 }
 .info-nav:not(:last-child) {
   margin-right: 50px;
@@ -162,8 +162,8 @@ margin-right: 50px;
 
   background-color: #e5e5e5;
 }
-.rticle-list {
-display: flex;
+.article-list {
+  display: flex;
 }
 
 .article-title {
@@ -196,6 +196,10 @@ display: flex;
   color: var(--main-title-color);
   outline: 1px solid red;
 }
+.gallery-list {
+  display: flex;
+  justify-content: center;
+}
 .outteam {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -211,6 +215,10 @@ display: flex;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+}
+.outteam-list {
+  display: flex;
+  justify-content: center;
 }
 .outteam-title {
   margin-top: 0px;
@@ -273,7 +281,7 @@ display: flex;
 }
 .footer-info-adres {
   margin-bottom: 9px;
-} 
+}
 .footer-info-nav {
   margin-bottom: 9px;
   font-style: normal;
@@ -287,6 +295,10 @@ display: flex;
 main {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.btn-navigation {
+  display: flex;
+  justify-content: center;
 }
 
 .btn-navigation-link {
@@ -309,9 +321,19 @@ main {
   background-color: var(--accent-color);
   font-family: inherit;
 }
-/* .project-item {
+.project {
+  width: 379;
+  height: 404;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly;
+  align-content: space-around; */
+}
+
+.project-item {
   margin-bottom: 30px;
-} */
+}
 .project-text {
   margin-top: 20px;
   margin-bottom: 4px;
