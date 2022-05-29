@@ -36,9 +36,7 @@ body {
   padding-right: 15px;
   outline: 1px solid red;
 }
-/* .container {
-  display: inline-block;
-} */
+
 .list {
   list-style: none;
 }
@@ -48,18 +46,12 @@ body {
 }
 /* -------------------------HEADER-------------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: var(--white-color);
 }
-.header-list .header-item:last-child,
-.info:last-child {
-  margin-right: 0px;
-}
-.header-list, .info {
-  display: flex;
-  align-items: center;
-}
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -70,12 +62,12 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
 
-/* .header .container {
+.hednav {
   display: flex;
   align-items: center;
-} */
+}
 
 .logo1 {
   font-family: 'Raleway';
@@ -95,8 +87,11 @@ body {
   color: var(--main-title-color);
 }
 
-.header-item, .info-nav {
-  background-color: red;
+.header-item:not(:last-child) { 
+margin-right: 50px;
+ outline: 1px solid red;
+}
+.info-nav:not(:last-child) {
   margin-right: 50px;
 }
 .header-link {
@@ -126,16 +121,18 @@ body {
 }
 /* -------------------------HERO----------------------- */
 .hero {
+  text-align: center;
   background-color: #2f303a;
 }
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1, 36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  outline: 1px solid white;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -144,12 +141,15 @@ body {
   font-family: inherit;
 }
 .button-primary {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1, 87;
   display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
@@ -157,9 +157,17 @@ body {
 /* ------------------------MAIN--article--------------------- */
 .article,
 .gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #e5e5e5;
 }
+.rticle-list {
+display: flex;
+}
+
 .article-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 14;
@@ -176,17 +184,27 @@ body {
 }
 /* ------------------------MAIN---------------------- */
 .gallery-text {
+  margin-top: 0spx;
+  margin-bottom: 50px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
+  outline: 1px solid red;
 }
 .outteam {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 .outteam-text1 {
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 16;
@@ -195,6 +213,9 @@ body {
   color: var(--main-title-color);
 }
 .outteam-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 18;
@@ -210,8 +231,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.outteam-img {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.gallery-item:not(:last-child),
+.outteam-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ------------------------FOOTER------------------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .logo2-footer {
@@ -237,7 +268,14 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.logo12 {
+  margin-bottom: 20px;
+}
+.footer-info-adres {
+  margin-bottom: 9px;
+} 
 .footer-info-nav {
+  margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -246,7 +284,18 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* --------------------портфолио------------------------- */
+main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .btn-navigation-link {
+  margin-right: 8px;
+  margin-bottom: 50px;
+  display: block;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 62;
@@ -260,14 +309,22 @@ body {
   background-color: var(--accent-color);
   font-family: inherit;
 }
+/* .project-item {
+  margin-bottom: 30px;
+} */
 .project-text {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-.project-top {
+.project-top:not(:last-child) {
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 87;
