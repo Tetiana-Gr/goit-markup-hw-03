@@ -21,9 +21,9 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-/* .img {
+.img {
   display: block;
-} */
+}
 
 body {
   color: var(--main-text-color);
@@ -31,10 +31,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .container {
-  box-sizing: border-box;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
   /* padding-left: 15px;
   padding-right: 15px; */
   /* outline: 1px solid red; */
@@ -64,15 +65,19 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
- .main-heder {
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ /* .main-heder {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-left: 215px;
   margin-right: 215px;
   border-bottom: 1px solid #ECECEC;
-}
+} */
 .header-nav, .header-list, .info {
   display: flex;
 }
@@ -150,8 +155,14 @@ body {
   margin-right: 215px;
 }
 .hero-title {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.hero-title {
   display: inline-block;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -182,20 +193,23 @@ body {
   background-color: var(--accent-color);
 }
 /* ------------------------MAIN--article--------------------- */
-.article,
-.gallery {
+.article {
   padding-top: 94px;
   padding-bottom: 94px;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin-left: 215px;
   margin-right: 215px;
 
   background-color: #e5e5e5;
 }
-.article-list {
+.article .container {
+  display: flex;
+}
+/* .article-list {
   display: flex;
   justify-content: center;
-}
+} */
 
 .article-title {
   
@@ -217,8 +231,8 @@ body {
 }
 /* ------------------------MAIN---------------------- */
 .gallery {
-  margin-left: 215px;
-  margin-right: 215px;
+  /* margin-left: 215px;
+  margin-right: 215px; */
 }
 .gallery-text {
   margin-top: 0spx;
@@ -232,7 +246,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.gallery-list {
+.gallery .container {
   display: flex;
   justify-content: center;
 }
