@@ -21,8 +21,6 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-
-
 body {
   color: var(--main-text-color);
   background-color: var(--white-color);
@@ -67,7 +65,7 @@ body {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  .: 1. 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -421,8 +419,6 @@ height: auto;
 }
 .text-top {
   padding: 20px 24px;
-  /* border: 1px solid #EEEEEE; */
-  /* border-bottom: 1px solid #EEEEEE; */
   
 }
 .project-text {
