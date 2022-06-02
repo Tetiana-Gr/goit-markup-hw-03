@@ -38,11 +38,11 @@ body {
 .link {
   text-decoration: none;
 }
-
 /* -------------------------HEADER-------------------- */
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #EEEEEE;
+  
 }
 .visually-hidden {
   position: absolute;
@@ -111,9 +111,11 @@ body {
 .info {
   display: flex;
 }
+.info-nav-header {
+  margin-right: 50px;
+}
 .info-nav {
   display: inline-block;
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -123,7 +125,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.info-nav-header .info-nav:nth-child(2n) {
+.info-nav-header:nth-child(2n) {
   margin-right: 0px;
 }
 .header-link:hover,
@@ -206,7 +208,7 @@ height: auto;
 
   font-weight: 700;
   font-size: 14px;
-  l. 1. 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -277,6 +279,8 @@ height: auto;
 }
 .outteam-item {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .outteam-aside {
   padding-top: 30px;
@@ -308,6 +312,12 @@ height: auto;
   padding-bottom: 60px;
 
   background-color: #2f303a;
+}
+.footer-list {
+  margin-bottom: 9px;
+}
+.footer-list:nth-child(3n) {
+  margin-bottom: 0px;
 }
 .footer .footer-nav {
   padding-bottom: 0px;
@@ -374,6 +384,7 @@ height: auto;
 .btn-navigation-link {
   padding: 6px 22px;
   border-radius: 4px;
+  border-color: transparent;
 
   font-weight: 500;
   font-size: 16px;
@@ -387,6 +398,7 @@ height: auto;
 .btn-navigation-link:focus {
   background-color: var(--accent-color);
   font-family: inherit;
+  color: var(--white-color);
 }
 
 .project {
